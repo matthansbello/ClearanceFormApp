@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clearance Form</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="navigation">
+				<span id="mobile-navigation">&nbsp;</span>
+				<a href="index.html" class="logo"><img src="images/ujlogo2_1.jpg" alt="" width="200" height="180"></a>
+				<ul id="menu">
+					<li class="selected">
+						<a href="index.html">Home</a>
+         			</li>
+         		 	<li>
+						<a href="signin.html">Clear</a>						
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					
+					<li>
+						<a href="blog.html">Blog</a>
+						
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="running">
+			<div>
+				<h1>Clearance</h1>
+				<ul class="gallery">
+					<li>
+						<img src="images/student1.jpg" alt="" width="200" height="200">
+					</li>
+					<li>
+						<img src="images/student2.jpg" alt="" width="200" height="200">
+					</li>
+					<li>
+						<img src="images/student3.jpg" alt="" width="200" height="200">
+					</li>
+				</ul>
+
+				<h2><b>BEGIN CLEARANCE</b></h2>
+				<h3><span>					
+					<form action="cleared.html" id="clearanceForm">
+							<input type="text" name="matric" placeholder="Matric Number" id="matric" required>
+						<input type="text" name="name" placeholder="Full Name" id="fullName" required>
+						<input type="text" name="Address" placeholder="Address" id="address" required>
+						<input type="text" name="Email" placeholder="Email" id="email" required>
+						<input type="number" name="year" placeholder="Year of Entry" id="year" required>
+						<select name="select" id="feesReceipt" required>
+							<option value="0">Is Fees Reciept Complete</option>
+							<option value="Complete" aria-required="true">Complete</option>
+							<option value="Incomplete">Incomplete</option>
+							
+						</select>
+						<select name="select" id="courseForm" required>
+							<option value="0">Is Course Form Complete</option>
+							<option value="Complete" aria-required="true">Complete</option>
+							<option value="Incompletes">Incomplete</option>
+						
+						</select>
+						<input type="text" name="med" placeholder="Medicals" id="medicals" required>
+						<select name="select" id="idCard" required>
+							<option value="0">Is Identity Card Available</option>
+							<option value="Available" aria-required="true">Available</option>
+							<option value="Not Available">Not Available</option>
+						
+						</select>
+						
+						<textarea name="message" cols="50" rows="7">Remark</textarea>
+						<input type="submit" value="Submit" id="submit" required>
+					</form>
+					</span></h3>
+				</div>
+		</div>
+		<div id="footer">
+			<div>
+				<p>&copy; 2019 by Mustard Innovators. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
